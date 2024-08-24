@@ -1,27 +1,27 @@
 let n1, n2, n3;
-let mensagem;
+let mensagem, m;
 
 n1 = parseInt(prompt("Digite o primeiro numero"));
 n2 = parseInt(prompt("Digite o segundo numero"));
 n3 = parseInt(prompt("Digite o terçeiro numero"));
 
-if ((n1 > n2) && (n1 > n3)) {
+if ((n1 >= n2) && (n1 >= n3)) {
    mensagem = ("O maior é " + n1);
 
-}else if ((n2 > n1) && (n2 > n3)) {
+}else if ((n2 >= n1) && (n2 >= n3)) {
    mensagem = ("O maior é " + n2);
    
-} else if ((n3 > n1) && (n3 > n2)) {
+} else if ((n3 >= n1) && (n3 >= n2)) {
    mensagem = ("O maior é " + n3);   
 }
 
-if ((n1 < n2) && (n1 < n3)) {
-   mensagem = ("O menor é " + n1);
+if ((n1 <= n2) && (n1 <= n3)) {
+   m = (" e menor é " + n1);
 
-}else if ((n2 < n1) && (n2 < n3)) {
-   mensagem = ("O menor é " + n2);
+}else if ((n2 <= n1) && (n2 <= n3)) {
+   m = (" e menor é " + n2);
    
-} else if ((n3 < n1) && (n3 < n2)) {
-   mensagem = ("O menor é " + n3);   
+} else if ((n3 <= n1) && (n3 <= n2)) {
+   m = (" e menor é " + n3);   
 }
-alert (mensagem)
+alert (mensagem + m )
