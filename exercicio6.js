@@ -8,7 +8,6 @@ numH = parseFloat(prompt("Horas Trabalhadas no Mês"));
 
 
 
-mensagem = (`o Funncionario ${nome}
-    vai receber ao final do mês: ${qntGanhaPh * numH}`);
+mensagem = (`O funcionario ${nome} vai receber ao final do mês: R$${qntGanhaPh * numH}`);
 
 alert (mensagem)
